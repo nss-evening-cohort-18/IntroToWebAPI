@@ -2,6 +2,7 @@
 
 namespace IntroToWebAPI.Interfaces
 {
+    //the interface for each repository should include any methods used by the controller
     public interface IPizzaRepository
     {
         Pizza GetById(int id);

@@ -3,8 +3,15 @@ using IntroToWebAPI.Models;
 
 namespace IntroToWebAPI.Repositories;
 
+/*  
+ *  A repository's purpose is to handle connecting to the database
+ *  and communicating with the database (CRUD actions)
+ *  Make sure to create an interface for each repository so it can
+ *  be registered as a service in Program.cs
+ */
 public class PizzaRepository : IPizzaRepository
 {
+    //this List is replacing our DB for now
     private static List<Pizza> _pizzaData = new()
     {
             new Pizza()
